@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_comments_comments",
+  "info": {
+    "displayName": "Comments"
+  },
+  "options": {},
+  "attributes": {
+    "comment": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_completed_lectures",
+  "info": {
+    "displayName": "lectures"
+  },
+  "options": {},
+  "attributes": {
+    "completed": {
+      "type": "boolean"
+    },
+    "video_id": {
+      "type": "integer"
+    }
+  }
+}

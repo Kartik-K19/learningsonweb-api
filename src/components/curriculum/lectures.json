@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_curriculum_lectures",
+  "info": {
+    "displayName": "lectures"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lecture_video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Course_description": {
+      "type": "richtext"
+    },
+    "Lectures": {
+      "type": "integer"
+    },
+    "Duration": {
+      "type": "string"
+    },
+    "Skill_Level": {
+      "type": "string"
+    },
+    "Language": {
+      "type": "string"
+    },
+    "Course_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "courses"
+    },
+    "instructor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::instructor.instructor",
+      "inversedBy": "courses"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "courses"
+    },
+    "videos": {
+      "displayName": "course_videos",
+      "type": "component",
+      "repeatable": true,
+      "component": "curriculum.course-videos"
+    }
+  }
+}

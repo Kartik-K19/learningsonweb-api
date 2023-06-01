@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instructors",
+  "info": {
+    "singularName": "instructor",
+    "pluralName": "instructors",
+    "displayName": "Instructor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Username": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40,
+      "minLength": 3,
+      "unique": true
+    },
+    "Email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "Password": {
+      "type": "password",
+      "required": true,
+      "minLength": 4
+    },
+    "ResetPasswordToken": {
+      "type": "text"
+    },
+    "ConfirmationToken": {
+      "type": "text"
+    },
+    "Blocked": {
+      "type": "boolean"
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string"
+    },
+    "about": {
+      "type": "richtext",
+      "minLength": 4
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "instructor"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "instructor"
+    },
+    "Confirmed": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_curriculum_course_videos",
+  "info": {
+    "displayName": "course_videos"
+  },
+  "options": {},
+  "attributes": {
+    "lectures": {
+      "displayName": "lectures",
+      "type": "component",
+      "repeatable": true,
+      "component": "curriculum.lectures"
+    },
+    "lecture_title": {
+      "type": "string"
+    }
+  }
+}

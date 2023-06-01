@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instructor_forms",
+  "info": {
+    "singularName": "instructor-form",
+    "pluralName": "instructor-forms",
+    "displayName": "Instructor_form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Designation": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "about": {
+      "type": "richtext"
+    }
+  }
+}
