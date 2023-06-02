@@ -4,7 +4,8 @@
   "info": {
     "singularName": "progress",
     "pluralName": "progresses",
-    "displayName": "Progress"
+    "displayName": "Progress",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,10 +17,10 @@
       "relation": "oneToOne",
       "target": "api::course.course"
     },
-    "blog": {
+    "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::blog.blog"
+      "target": "plugin::users-permissions.user"
     },
     "progress": {
       "type": "integer"
